@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>CCA</title>
+	<title>Method1</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="https://checkout.stripe.com/checkout.js"></script>
 </head>
-<body>
-
-<script src="app.js"></script>
-</body>
+	<body>
+		<form action="your-server-side-code" method="POST">
+		  <script
+		    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+		    data-key="pk_test_tlGvMEZpfQYENkqTxSK787gn"
+		    data-amount="1099"
+		    data-name="Collin County Cornerstone Chrsitian Academy"
+		    data-description="Summer Immersion Program"
+		    data-image="https://dw3jhbqsbya58.cloudfront.net/school-mascot/9/b/0/9b0575d8-6dd3-4b77-b4fa-24c33478e5ec.gif?version=634469397000000000"
+		    data-locale="auto"
+		    data-zip-code="true">
+		  </script>
+		</form>
+		<script type="text/javascript" src="app.js"></script>
+	</body>
 </html>
+
+
